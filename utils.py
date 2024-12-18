@@ -145,34 +145,7 @@ def plot_gradient_descent_2d(
 ):
     if x.ndim == 1:
         x = np.array(x).reshape(-1, 1)
-    if stochastic:
-        if batch_size is None:
-            weights, losses = plot_stochastic_gradient_descent(
-                np.hstack((np.ones((len(x), 1)), x)),
-                y,
-                w,
-                alpha,
-                tolerance,
-                max_iterations,
-                history=True,
-                seed=seed,
-            )
-            title = "Stochastic Gradient Descent"
-        else:
-            weights, losses = minibatch_gradient_descent(
-                np.hstack((np.ones((len(x), 1)), x)),
-                y,
-                w,
-                alpha,
-                batch_size,
-                tolerance,
-                max_iterations,
-                history=True,
-                seed=seed,
-            )
-            title = "Minibatch Gradient Descent"
-    else:
-        weights, losses = gradient_descent(
+        weights, losses = plot_stochastic_gradient_descent(
             np.hstack((np.ones((len(x), 1)), x)),
             y,
             w,
@@ -180,8 +153,9 @@ def plot_gradient_descent_2d(
             tolerance,
             max_iterations,
             history=True,
+            seed=seed,
         )
-        title = "Gradient Descent"
+        title = "Stochastic Gradient Descent"
     weights = np.array(weights)
     intercepts, slopes = weights[:, 0], weights[:, 1]
     mse = np.zeros((len(m_range), len(b_range)))
