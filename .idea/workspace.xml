@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77f25d85-edcd-4007-8971-abeb17156589" name="Changes" comment="added utils">
-      <change afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/plotting.py" beforeDir="false" />
-    </list>
+    <list default="true" id="77f25d85-edcd-4007-8971-abeb17156589" name="Changes" comment="implemented stochastic gradient" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1734539898052</updated>
-      <workItem from="1734539899143" duration="5116000" />
+      <workItem from="1734539899143" duration="5679000" />
     </task>
     <task id="LOCAL-00001" summary="created project">
       <option name="closed" value="true" />
@@ -112,7 +106,31 @@
       <option name="project" value="LOCAL" />
       <updated>1734541081814</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="implemented stochastic gradient">
+      <option name="closed" value="true" />
+      <created>1734545312787</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1734545312787</updated>
+    </task>
+    <task id="LOCAL-00006" summary="implemented stochastic gradient">
+      <option name="closed" value="true" />
+      <created>1734545418451</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1734545418451</updated>
+    </task>
+    <task id="LOCAL-00007" summary="implemented stochastic gradient">
+      <option name="closed" value="true" />
+      <created>1734545426480</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1734545426480</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,11 +141,12 @@
     <MESSAGE value="added imports" />
     <MESSAGE value="added dataset" />
     <MESSAGE value="added utils" />
-    <option name="LAST_COMMIT_MESSAGE" value="added utils" />
+    <MESSAGE value="implemented stochastic gradient" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented stochastic gradient" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/stochastic_gradient_descent$plotting.coverage" NAME="plotting Coverage Results" MODIFIED="1734541637478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/stochastic_gradient_descent$main.coverage" NAME="main Coverage Results" MODIFIED="1734544995286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/stochastic_gradient_descent$main.coverage" NAME="main Coverage Results" MODIFIED="1734545176069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/stochastic_gradient_descent$utils.coverage" NAME="utils Coverage Results" MODIFIED="1734544916096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
