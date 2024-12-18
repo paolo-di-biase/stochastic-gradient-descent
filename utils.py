@@ -139,8 +139,6 @@ def plot_gradient_descent_2d(
     max_iterations=5000,
     step_size=1,
     markers=False,
-    stochastic=False,
-    batch_size=None,
     seed=None,
 ):
     if x.ndim == 1:
