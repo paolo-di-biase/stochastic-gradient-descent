@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77f25d85-edcd-4007-8971-abeb17156589" name="Changes" comment="implemented stochastic gradient" />
+    <list default="true" id="77f25d85-edcd-4007-8971-abeb17156589" name="Changes" comment="added gitignore" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +20,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "paolo-di-biase"
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/paolo-di-biase/stochastic-gradient-descent.git",
@@ -78,7 +84,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1734539898052</updated>
-      <workItem from="1734539899143" duration="5984000" />
+      <workItem from="1734539899143" duration="6221000" />
     </task>
     <task id="LOCAL-00001" summary="created project">
       <option name="closed" value="true" />
@@ -144,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734545651301</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added gitignore">
+      <option name="closed" value="true" />
+      <created>1734545911401</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1734545911401</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,7 +170,8 @@
     <MESSAGE value="added dataset" />
     <MESSAGE value="added utils" />
     <MESSAGE value="implemented stochastic gradient" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented stochastic gradient" />
+    <MESSAGE value="added gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="added gitignore" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/stochastic_gradient_descent$plotting.coverage" NAME="plotting Coverage Results" MODIFIED="1734541637478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
