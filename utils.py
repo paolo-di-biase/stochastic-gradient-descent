@@ -4,8 +4,20 @@ import pandas as pd
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 from plotly.subplots import make_subplots
 
+'''
+Funzione di calcolo gradiente della funzione di perdita dei minimi quadrati rispetto ai pesi del modello
+Input:
+- w, l'array che contiene i pesi del modello
+- X, matrice degli input
+- y, matrice dei valori target
+
+La funzione calcola il gradiente del MSE rispetto ai pesi w secondo la formula:
+∇MSE(w)=(-2/n)(X.T(y-y'))
+ottimizzata in modo da effettuare il prodotto matrice-vettore che è più efficiente
+'''
 def gradient(w, X, y):
-    return 2 * (X.T @ (X @ w) - X.T @ y) / len(X)
+    y_pred = (X @ w)
+    return 2 * (X.T @ y_pred - X.T @ y) / len(X)
 
 def stochastic_gradient_descent(x, y, w, alpha, num_iterations=300, print_progress=100, seed=None):
 
