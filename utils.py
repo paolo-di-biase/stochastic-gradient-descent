@@ -7,9 +7,9 @@ from plotly.subplots import make_subplots
 '''
 Funzione di calcolo gradiente della funzione di perdita dei minimi quadrati rispetto ai pesi del modello
 Input:
-- w, l'array che contiene i pesi del modello
+- w, array dei pesi del modello
 - X, matrice degli input
-- y, matrice dei valori target
+- y, array dei valori target
 
 La funzione calcola il gradiente del MSE rispetto ai pesi w secondo la formula:
 ∇MSE(w)=(-2/n)(X.T(y-y'))
