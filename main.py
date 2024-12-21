@@ -23,7 +23,6 @@ X = np.hstack((np.ones((len(x), 1)), x[:, None]))
 '''calcoliamo il gradiente stocastico'''
 w = [-20, -5]
 alpha = 0.01
-X = np.hstack((np.ones((len(x), 1)), x[:, None]))
 weights = stochastic_gradient_descent(X, y, w, alpha, seed=2020)
 
 '''visualizziamo la path'''
