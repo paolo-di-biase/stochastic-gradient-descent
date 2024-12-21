@@ -1,6 +1,5 @@
 import plotly.graph_objects as go
 import numpy as np
-import pandas as pd
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 from plotly.subplots import make_subplots
 
