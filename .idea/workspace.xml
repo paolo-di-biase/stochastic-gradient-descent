@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77f25d85-edcd-4007-8971-abeb17156589" name="Changes" comment="removed duplicated statement">
+    <list default="true" id="77f25d85-edcd-4007-8971-abeb17156589" name="Changes" comment="added comments to &quot;stochastic_gradient_descent&quot; function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
     </list>
@@ -89,7 +89,7 @@
       <updated>1734539898052</updated>
       <workItem from="1734539899143" duration="6221000" />
       <workItem from="1734716921426" duration="5688000" />
-      <workItem from="1734773962485" duration="2692000" />
+      <workItem from="1734773962485" duration="3140000" />
     </task>
     <task id="LOCAL-00001" summary="created project">
       <option name="closed" value="true" />
@@ -219,7 +219,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734775719920</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="added comments to &quot;stochastic_gradient_descent&quot; function">
+      <option name="closed" value="true" />
+      <created>1734777102388</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1734777102388</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,7 +244,8 @@
     <MESSAGE value="added comment to function &quot;gradient&quot;" />
     <MESSAGE value="Optimized plot function" />
     <MESSAGE value="removed duplicated statement" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed duplicated statement" />
+    <MESSAGE value="added comments to &quot;stochastic_gradient_descent&quot; function" />
+    <option name="LAST_COMMIT_MESSAGE" value="added comments to &quot;stochastic_gradient_descent&quot; function" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/stochastic_gradient_descent$plotting.coverage" NAME="plotting Coverage Results" MODIFIED="1734541637478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
