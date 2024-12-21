@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77f25d85-edcd-4007-8971-abeb17156589" name="Changes" comment="Optimized plot function">
+    <list default="true" id="77f25d85-edcd-4007-8971-abeb17156589" name="Changes" comment="removed duplicated statement">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +89,7 @@
       <updated>1734539898052</updated>
       <workItem from="1734539899143" duration="6221000" />
       <workItem from="1734716921426" duration="5688000" />
-      <workItem from="1734773962485" duration="1687000" />
+      <workItem from="1734773962485" duration="2692000" />
     </task>
     <task id="LOCAL-00001" summary="created project">
       <option name="closed" value="true" />
@@ -210,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734774899751</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="removed duplicated statement">
+      <option name="closed" value="true" />
+      <created>1734775719920</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1734775719920</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,11 +235,12 @@
     <MESSAGE value="fixed function cal &quot;plot_gradient_descend_2d&quot;" />
     <MESSAGE value="added comment to function &quot;gradient&quot;" />
     <MESSAGE value="Optimized plot function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Optimized plot function" />
+    <MESSAGE value="removed duplicated statement" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed duplicated statement" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/stochastic_gradient_descent$plotting.coverage" NAME="plotting Coverage Results" MODIFIED="1734541637478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/stochastic_gradient_descent$main.coverage" NAME="main Coverage Results" MODIFIED="1734774725400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/stochastic_gradient_descent$main.coverage" NAME="main Coverage Results" MODIFIED="1734775800737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/stochastic_gradient_descent$utils.coverage" NAME="utils Coverage Results" MODIFIED="1734722967286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

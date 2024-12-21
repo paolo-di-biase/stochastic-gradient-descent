@@ -19,23 +19,37 @@ def gradient(w, X, y):
     y_pred = (X @ w)
     return 2 * (X.T @ y_pred - X.T @ y) / len(X)
 
+'''
+Funzione di calcolo della discesa stocastica del gradiente, per ottimizzare i pesi
+Input:
+- x, matrice degli input
+- y, array dei valori target
+- w, vettore dei pesi inizali
+- alpha, learning rate
+- num_iterations, numero massimo di iterazioni da eseguire
+- print_progress, frequenza con cui stampare i progressi
+- seed, seed per la pseudorandomness
+
+La funzione aggiorna i pesi in modo da ottimizzare l'errore quadratico medio, sfrutta quindi il gradiente, ma 
+l'aggiornamento è fatto usando un singolo esempio casuale per ogni iterazione.
+'''
 def stochastic_gradient_descent(x, y, w, alpha, num_iterations=300, print_progress=100, seed=None):
 
-    ws=[]
+    ws=[] # vettore che contiene i vari aggiornamenti dei pesi, usato per il plot
 
     print(f"Iteration 0. Intercept {w[0]:.2f}. Slope {w[1]:.2f}.")
-    iterations = 1  # init iterations
-    if seed is not None:  # init seed (if given)
+    iterations = 1
+    if seed is not None:
         np.random.seed(seed)
 
     while iterations <= num_iterations:
-        i = np.random.randint(len(x))  # <--- this is the only new bit! <---
-        g = gradient(w, x[i, None], y[i, None])  # calculate current gradient
-        w -= alpha * g  # adjust w based on gradient * learning rate
-        ws.append(list(w))
-        if iterations % print_progress == 0:  # periodically print progress
+        i = np.random.randint(len(x))  # selezione di un indica casuale
+        g = gradient(w, x[i, None], y[i, None])  # calcolo del gradiente sull'elemento selezionato
+        w -= alpha * g  # aggiustati pesi tramite il gradente * learning rate
+        ws.append(list(w)) # aggiunti pesi al vettore
+        if iterations % print_progress == 0:  # stampa progressi se necessario
             print(f"Iteration {iterations}. Intercept {w[0]:.2f}. Slope {w[1]:.2f}.")
-        iterations += 1  # increase iteration
+        iterations += 1  # incrementa iterazioni
 
     print("Terminated!")
     print(f"Iteration {iterations - 1}. Intercept {w[0]:.2f}. Slope {w[1]:.2f}.")
