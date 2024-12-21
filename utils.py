@@ -21,6 +21,8 @@ def gradient(w, X, y):
 
 def stochastic_gradient_descent(x, y, w, alpha, num_iterations=300, print_progress=100, seed=None):
 
+    ws=[]
+
     print(f"Iteration 0. Intercept {w[0]:.2f}. Slope {w[1]:.2f}.")
     iterations = 1  # init iterations
     if seed is not None:  # init seed (if given)
@@ -30,12 +32,14 @@ def stochastic_gradient_descent(x, y, w, alpha, num_iterations=300, print_progre
         i = np.random.randint(len(x))  # <--- this is the only new bit! <---
         g = gradient(w, x[i, None], y[i, None])  # calculate current gradient
         w -= alpha * g  # adjust w based on gradient * learning rate
+        ws.append(list(w))
         if iterations % print_progress == 0:  # periodically print progress
             print(f"Iteration {iterations}. Intercept {w[0]:.2f}. Slope {w[1]:.2f}.")
         iterations += 1  # increase iteration
 
     print("Terminated!")
     print(f"Iteration {iterations - 1}. Intercept {w[0]:.2f}. Slope {w[1]:.2f}.")
+    return ws
 
 
 '''**********************************************PLOT FUNCTIONS**************************************************'''
@@ -78,93 +82,17 @@ def plot_pokemon(
     fig.show()
     return fig
 
-def plot_gradient(x, y, w):
-    """MSE gradient."""
-    y_hat = x @ w
-    error = y - y_hat
-    gradient = -(1.0 / len(x)) * 2 * x.T @ error
-    mse = (error ** 2).mean()
-    return gradient, mse
-
-def plot_stochastic_gradient_descent(
-    x,
-    y,
-    w,
-    alpha,
-    tolerance: float = 2e-5,
-    max_iterations: int = 1000,
-    verbose: bool = False,
-    print_progress: int = 10,
-    history: bool = False,
-    seed=None,
-):
-    """MSE stochastic gradient descent."""
-    if seed is not None:
-        np.random.seed(seed)
-    iterations = 1
-    if verbose:
-        print(f"Iteration 0.", "Weights:", [f"{_:.2f}" for _ in w])
-    if history:
-        ws = []
-        mses = []
-    while True:
-        i = np.random.randint(len(x))
-        g, mse = plot_gradient(x[i, None], y[i, None], w)
-        if history:
-            ws.append(list(w))
-            mses.append(mse)
-        w_new = w - alpha * g
-        if sum(abs(w_new - w)) < tolerance:
-            if verbose:
-                print(f"Converged after {iterations} iterations!")
-                print("Final weights:", [f"{_:.2f}" for _ in w_new])
-            break
-        if iterations % print_progress == 0:
-            if verbose:
-                print(
-                    f"Iteration {iterations}.",
-                    "Weights:",
-                    [f"{_:.2f}" for _ in w_new],
-                )
-        iterations += 1
-        if iterations > max_iterations:
-            if verbose:
-                print(f"Reached max iterations ({max_iterations})!")
-                print("Final weights:", [f"{_:.2f}" for _ in w_new])
-            break
-        w = w_new
-    if history:
-        w = w_new
-        _, mse = plot_gradient(x, y, w)
-        ws.append(list(w))
-        mses.append(mse)
-        return ws, mses
-
 def plot_gradient_descent_2d(
     x,
     y,
-    w,
-    alpha,
+    weights,
     m_range,
     b_range,
-    tolerance=2e-5,
-    max_iterations=5000,
     step_size=1,
     markers=False,
-    seed=None,
 ):
     if x.ndim == 1:
         x = np.array(x).reshape(-1, 1)
-        weights, losses = plot_stochastic_gradient_descent(
-            np.hstack((np.ones((len(x), 1)), x)),
-            y,
-            w,
-            alpha,
-            tolerance,
-            max_iterations,
-            history=True,
-            seed=seed,
-        )
         title = "Stochastic Gradient Descent"
     weights = np.array(weights)
     intercepts, slopes = weights[:, 0], weights[:, 1]

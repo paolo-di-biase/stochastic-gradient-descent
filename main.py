@@ -24,7 +24,7 @@ X = np.hstack((np.ones((len(x), 1)), x[:, None]))
 w = [-20, -5]
 alpha = 0.01
 X = np.hstack((np.ones((len(x), 1)), x[:, None]))
-stochastic_gradient_descent(X, y, w, alpha, seed=2020)
+weights = stochastic_gradient_descent(X, y, w, alpha, seed=2020)
 
 '''visualizziamo la path'''
-plot_gradient_descent_2d(x, y, w, alpha, np.arange(-30, 60, 2), np.arange(-40, 140, 2), max_iterations=300, seed=2020)
+plot_gradient_descent_2d(x, y, weights, np.arange(-30, 60, 2), np.arange(-40, 140, 2))

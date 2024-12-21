@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77f25d85-edcd-4007-8971-abeb17156589" name="Changes" comment="added comment to function &quot;gradient&quot;" />
+    <list default="true" id="77f25d85-edcd-4007-8971-abeb17156589" name="Changes" comment="added comment to function &quot;gradient&quot;">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,7 +89,8 @@
       <option name="presentableId" value="Default" />
       <updated>1734539898052</updated>
       <workItem from="1734539899143" duration="6221000" />
-      <workItem from="1734716921426" duration="2680000" />
+      <workItem from="1734716921426" duration="5688000" />
+      <workItem from="1734773962485" duration="309000" />
     </task>
     <task id="LOCAL-00001" summary="created project">
       <option name="closed" value="true" />
@@ -191,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734718994566</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="added comment to function &quot;gradient&quot;">
+      <option name="closed" value="true" />
+      <created>1734720642878</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1734720642878</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,7 +223,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/stochastic_gradient_descent$plotting.coverage" NAME="plotting Coverage Results" MODIFIED="1734541637478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/stochastic_gradient_descent$main.coverage" NAME="main Coverage Results" MODIFIED="1734718613488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/stochastic_gradient_descent$utils.coverage" NAME="utils Coverage Results" MODIFIED="1734544916096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/stochastic_gradient_descent$main.coverage" NAME="main Coverage Results" MODIFIED="1734723817287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/stochastic_gradient_descent$utils.coverage" NAME="utils Coverage Results" MODIFIED="1734722967286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
