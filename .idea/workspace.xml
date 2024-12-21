@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77f25d85-edcd-4007-8971-abeb17156589" name="Changes" comment="added comments to &quot;stochastic_gradient_descent&quot; function">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
-    </list>
+    <list default="true" id="77f25d85-edcd-4007-8971-abeb17156589" name="Changes" comment="updated imports" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,7 +86,7 @@
       <updated>1734539898052</updated>
       <workItem from="1734539899143" duration="6221000" />
       <workItem from="1734716921426" duration="5688000" />
-      <workItem from="1734773962485" duration="3140000" />
+      <workItem from="1734773962485" duration="3497000" />
     </task>
     <task id="LOCAL-00001" summary="created project">
       <option name="closed" value="true" />
@@ -227,7 +224,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734777102388</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="added comments to &quot;stochastic_gradient_descent&quot; function">
+      <option name="closed" value="true" />
+      <created>1734777109802</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1734777109802</updated>
+    </task>
+    <task id="LOCAL-00019" summary="updated imports">
+      <option name="closed" value="true" />
+      <created>1734777459864</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1734777459864</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,11 +258,12 @@
     <MESSAGE value="Optimized plot function" />
     <MESSAGE value="removed duplicated statement" />
     <MESSAGE value="added comments to &quot;stochastic_gradient_descent&quot; function" />
-    <option name="LAST_COMMIT_MESSAGE" value="added comments to &quot;stochastic_gradient_descent&quot; function" />
+    <MESSAGE value="updated imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated imports" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/stochastic_gradient_descent$plotting.coverage" NAME="plotting Coverage Results" MODIFIED="1734541637478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/stochastic_gradient_descent$main.coverage" NAME="main Coverage Results" MODIFIED="1734775800737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/stochastic_gradient_descent$main.coverage" NAME="main Coverage Results" MODIFIED="1734777430628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/stochastic_gradient_descent$utils.coverage" NAME="utils Coverage Results" MODIFIED="1734722967286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
