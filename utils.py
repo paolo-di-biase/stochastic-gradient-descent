@@ -44,7 +44,7 @@ def stochastic_gradient_descent(x, y, w, alpha, num_iterations=300, print_progre
     while iterations <= num_iterations:
         i = np.random.randint(len(x))  # selezione di un indica casuale
         g = gradient(w, x[i, None], y[i, None])  # calcolo del gradiente sull'elemento selezionato
-        w -= alpha * g  # aggiustati pesi tramite il gradente * learning rate
+        w -= alpha * g  # aggiustati pesi tramite il gradiente * learning rate
         ws.append(list(w)) # aggiunti pesi al vettore
         if iterations % print_progress == 0:  # stampa progressi se necessario
             print(f"Iteration {iterations}. Intercept {w[0]:.2f}. Slope {w[1]:.2f}.")

@@ -61,7 +61,7 @@ Calcolo gradiente
     * seed: Seme per generare numeri casuali.
 Risultato: Restituisce i pesi aggiornati `weights` che minimizzano l'errore.
 '''
-weights = stochastic_gradient_descent(X, y, w, alpha, seed=2020)
+weights = stochastic_gradient_descent(X, y, w, alpha, num_iterations=300, seed=2020)
 
 '''Visualizziamo la path di discesa del grandiente
 - plot_gradient_descent_2d: funzione di visualizzazione del percorso in uno spazio bidimensionale
