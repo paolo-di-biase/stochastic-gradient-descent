@@ -11,7 +11,7 @@ Input:
 - y, array dei valori target
 
 La funzione calcola il gradiente del MSE rispetto ai pesi w secondo la formula:
-∇MSE(w)=(-2/n)(X.T(y-y'))
+∇MSE(w)=(2/n)(X.T(y-y'))
 ottimizzata in modo da effettuare il prodotto matrice-vettore che è più efficiente
 '''
 def gradient(w, X, y):
@@ -41,8 +41,10 @@ def stochastic_gradient_descent(x, y, w, alpha, num_iterations=300, print_progre
     if seed is not None:
         np.random.seed(seed)
 
-    while iterations <= num_iterations:
-        i = np.random.randint(len(x))  # selezione di un indica casuale
+    epsilon = 1e-4  # inizializzato epsilon per criterio di stop
+    g = np.inf  # inizializzato g a valore grande
+    while np.linalg.norm(g) >= epsilon and iterations < num_iterations:  # criteri di stop: gradiente < epsilon || raggiunto num max iterazioni
+        i = np.random.randint(len(x))  # selezione di un indice casuale
         g = gradient(w, x[i, None], y[i, None])  # calcolo del gradiente sull'elemento selezionato
         w -= alpha * g  # aggiustati pesi tramite il gradiente * learning rate
         ws.append(list(w)) # aggiunti pesi al vettore
