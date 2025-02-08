@@ -11,7 +11,8 @@ Prendiamo il dataset
 df = pd.read_csv("data/pokemon.csv", usecols=['name', 'defense', 'attack'])
 
 '''
-Normalizza i valori della colonna defense, scalando la media a 0 e la deviazione standard a 1.
+Normalizza i valori della colonna defense, scalando la media a 0 e la deviazione standard a 1 eliminando il problema
+delle diverse scale, migliorare l'efficienza degli algoritmi e rendere i dati più comprensibili.
 - .flatten(): Converte l’output in un array monodimensionale.
 Risultato: x contiene i valori normalizzati della colonna defense.
 '''
